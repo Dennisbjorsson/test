@@ -7,7 +7,7 @@ test('Testar renderização da página com tarefas', () => {
     { id: 2, titulo: 'Musculação', concluida: false },
   ];
 
-  render(<ListaTarefa tarefas={tarefas} />);
+  render(<ListaTarefa tarefas={tarefas}/>);
 
   expect(screen.getByText('Estudar')).toBeInTheDocument();
   expect(screen.getByText('Musculação')).toBeInTheDocument();
