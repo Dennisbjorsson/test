@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { buscarTarefas } from '../services/tarefas';
-import ListaTarefas from './component/ListaTarefas';
+import ListaTarefa from './component/ListaTarefas';
 import NovaTarefa from './component/NovaTarefa';
 import { Tarefa } from '../types/tarefas';
 import { useContadorDeTarefas } from '../hooks/useContadorDeTarefas';
@@ -33,7 +33,7 @@ export default function Page() {
 
       <NovaTarefa adicionar={adicionarTarefa} />
 
-      <ListaTarefas tarefas={tarefas} />
+      <ListaTarefa tarefas={tarefas} />
     </main>
   );
 }
