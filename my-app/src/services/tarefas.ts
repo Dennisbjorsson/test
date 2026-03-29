@@ -1,4 +1,4 @@
-import { Tarefa } from '@/../src/types/tarefas';
+import { Tarefa } from '../types/tarefas';
 
 const tarefas: Tarefa[] = [
   { id: 1, titulo: 'Estudar', concluida: false },

@@ -1,11 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { buscarTarefas } from '@/services/tarefas';
+import { buscarTarefas } from '../services/tarefas';
 import ListaTarefas from './component/ListaTarefas';
 import NovaTarefa from './component/NovaTarefa';
-import { Tarefa } from '@/types/tarefas';
-import { useContadorDeTarefas } from '@/hooks/useContadorDeTarefas';
+import { Tarefa } from '../types/tarefas';
+import { useContadorDeTarefas } from '../hooks/useContadorDeTarefas';
 
 export default function Page() {
   const [tarefas, setTarefas] = useState<Tarefa[]>([]);
